@@ -5,7 +5,7 @@ using Logical_Programs;
 Console.WriteLine("*********** WELCOME TO LOGICAL PROGRAMS ***********");
 LogicalPrograms obj = new LogicalPrograms();
 //obj.FibonacciSeries();
-obj.PerfectNumber();
-
+//obj.PerfectNumber();
+obj.ReverseNumber();
 
 Console.ReadKey();
