@@ -99,7 +99,30 @@ namespace Logical_Programs
             if (flag == 0)
                 Console.Write("Number is Prime.");
         }
+
+        public void CouponNumber() 
+        {
+            List<int> coupons = new List<int>();
+            Random rand = new Random();
+            int randomInput;
+            int n;
+
+            Console.WriteLine("Enter A Number : ");
+            n=Convert.ToInt32(Console.ReadLine());
+            while (coupons.Count < n)
+            {
+                randomInput = rand.Next(1, n + 1);
+                if (coupons.Contains(randomInput) is false)
+                    coupons.Add(randomInput);
+            }
+            Console.WriteLine("Coupons Generated:");
+            foreach (int coupon in coupons)
+                Console.Write(coupon + " ");
+
+
+        }
     }
+
    
     
 }

@@ -7,6 +7,7 @@ LogicalPrograms obj = new LogicalPrograms();
 //obj.FibonacciSeries();
 //obj.PerfectNumber();
 //obj.ReverseNumber();
-obj.PrimeNumber();
+//obj.PrimeNumber();
+obj.CouponNumber();
 
 Console.ReadKey();
